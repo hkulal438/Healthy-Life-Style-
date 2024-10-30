@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+      }
+      body {
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: "Poppins", sans-serif;
+        background:linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0, 0.2)),
+        url(./Background1.jpg);
+      }
+      .container {
+        width: 90%;
+        height: 100%;
+        max-width: 1170px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        grid-gap: 60px;
+        padding: 35px 0;
+      }
+      .contentLeft,
+      .contentRight {
+        width: 100%;
+      }
+      .contentLeft .row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+      }
+      .contentLeft .row .imgWrapper {
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.15);
+      }
+      .contentLeft .row .imgWrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        user-select: none;
+        transition: 0.3s ease;
+      }
+      .contentLeft .row .imgWrapper:hover img {
+        transform: scale(1.5);
+      }
+      .contentLeft .row .imgWrapper:nth-child(odd) {
+        transform: translateY(-20px);
+      }
+      .contentLeft .row .imgWrapper:nth-child(even) {
+        transform: translateY(20px);
+      }
+      .contentRight .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+      }
+      .contentRight .content h4 {
+        font-size: 22px;
+        font-weight: 400;
+        color: #d35400;
+      }
+      .contentRight .content h2 {
+        font-size: 40px;
+        color: #d35400;
+      }
+      .contentRight .content p {
+        font-size: 16px;
+        color:white;
+        line-height: 28px;
+        padding-bottom: 10px;
+      }
+      .contentRight .content a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 13px 30px;
+        color: #fff;
+        background: #d35400;
+        border-radius: 8px;
+        user-select: none;
+      }
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+        .contentLeft .row {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .contentLeft .row .imgWrapper {
+          height: 150px;
+        }
+        .contentRight .content h4 {
+          font-size: 18px;
+        }
+        .contentRight .content h2 {
+          font-size: 30px;
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body >
+    <div class="container">
+      <div class="contentLeft">
+        <div class="row">
+          <div class="imgWrapper">
+            <img src="./1.avif" alt="" />
+          </div>
+          <div class="imgWrapper">
+            <img src="./2.avif" alt="" />
+          </div>
+          <div class="imgWrapper">
+            <img src="./3.avif" alt="" />
+          </div>
+          <div class="imgWrapper">
+            <img src="./4.avif" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="contentRight">
+        <div class="content">
+          <h4>Welcome To</h4>
+          <h2>About Us Title...</h2>
+          <p>
+            Living a
+healthy lifestyle for our gidances sences
+Copilot
+Living a healthy lifestyle means nurturing every aspect of our being. It's about fueling our body with nutritious food, engaging in regular physical activity, and fostering mental and emotional well-being. Taking care of your body, mind, and soul can transform your overall quality of life.
+          </p>
+          <a href="login.html">Read More...</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

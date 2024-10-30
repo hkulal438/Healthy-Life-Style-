@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ccc;
+  font-family: arial, verdana, tahoma;
+  overflow: hidden;
+}
+
+.img {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+}
+
+.img ul {
+  width: 100%; 
+  display: flex; 
+  padding: 0; 
+  margin: 0;
+}
+
+.img li {
+  position: relative;
+  display: block;
+  width: 20%; 
+  height: 100vh; 
+  transition: all 0.5s;
+}
+
+.img ul:hover li {
+  width: 5%;
+}
+
+.img ul li:hover {
+  width: 60%; 
+}
+
+.img li img {
+  display: block;
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.image_title {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; 
+}
+
+.image_title a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 16px;
+}
+
+</style>
+<body>
+  <div class="img">
+    <ul>
+      <li>
+        <div class="image_title">
+          <a href="#">Do Meditation for Better feel</a>
+        </div>
+        <a href="#">
+          <img src="fit1.webp"/>
+        </a>
+      </li>
+      <li>
+        <div class="image_title">
+          <a href="#">Yoga</a>
+        </div>
+        <a href="#">
+          <img src="fit2.webp"/>
+        </a>
+      </li>
+      <li>
+        <div class="image_title">
+          <a href="#">Gym</a>
+        </div>
+        <a href="#">
+          <img src="fit3.jpeg"/>
+        </a>
+      </li>
+      <li>
+        <div class="image_title">
+          <a href="#">Running</a>
+        </div>
+        <a href="#">
+          <img src="fit4.webp"/>
+        </a>
+      </li>
+      <li>
+        <div class="image_title">
+          <a href="#">Sooryanamaskara</a>
+        </div>
+        <a href="#">
+          <img src="fit5.avif"/>
+        </a>
+      </li>
+      <li>
+        <div class="image_title">
+          <a href="#">Happiness</a>
+        </div>
+        <a href="#">
+          <img src="fit6.webp"/>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Lato:400,600,700);
+.img {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  float: left;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 16px;
+  margin: 10px 1%;
+  max-width: 310px;
+  min-width: 250px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.img * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.img img {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+}
+
+.img figcaption {
+  padding: 25px 20px 25px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.img figcaption:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #700877;
+  content: '';
+  background: -moz-linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: -webkit-linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.img .date {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #700877;
+  font-size: 18px;
+  font-weight: 700;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 10px 0;
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  top: -25px;
+}
+
+.img .date span {
+  display: block;
+  line-height: 14px;
+}
+
+.img .date .month {
+  font-size: 11px;
+}
+
+.img h3,
+.img p {
+  margin: 0;
+  padding: 0;
+}
+
+.img h3 {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  margin-bottom: 5px;
+}
+
+.img p {
+  font-size: 0.8em;
+  line-height: 1.6em;
+  margin-bottom: 0px;
+}
+
+.img a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.img:hover img,
+.img.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+body {
+  background-color: #212121;
+}
+</style>
+<body>
+    <figure class="img">
+        <div class="image"><img src="bk1.jpeg" alt="pr-sample23" /></div>
+        <figcaption>
+          <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
+          <h3>The World Ended Yesterday</h3>
+          <p>
+      
+            Enjoying a dessert is like savoring a moment of pure bliss. Each bite is an indulgence that delights the senses and lifts the spirit, transforming even the simplest day into a celebration.          </p>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+      <figure class="img hover">
+        <div class="image"><img src="bk2.jpeg" alt="pr-sample24" /></div>
+        <figcaption>
+          <div class="date"><span class="day">17</span><span class="month">Nov</span></div>
+          <h3>An Abstract Post Heading</h3>
+          <p>
+      
+            From the delicate sweetness of a crème brûlée to the bold flavors of a rich chocolate torte, desserts come in many forms, each with its unique charm. They invite us to pause and relish in life's little pleasures.
+          </p>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+      <figure class="img">
+        <div class="image"><img src="bk3.jpeg" alt="pr-sample25" /></div>
+        <figcaption>
+          <div class="date"><span class="day">01</span><span class="month">Dec</span></div>
+          <h3>Down with this sort of thing</h3>
+          <p>
+      
+            The first bite is always the sweetest, awakening the taste buds with a symphony of flavors and textures. It's a reminder that life, much like a well-crafted dessert, should be enjoyed slowly and thoughtfully.          </p>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+      <figure class="img">
+        <div class="image"><img src="./bk2.jpeg" alt="pr-sample23" /></div>
+        <figcaption>
+          <div class="date"><span class="day">28</span><span class="month">Oct</span></div>
+          <h3>The World Ended Yesterday</h3>
+          <p>
+      
+            Whether shared with loved ones or savored in solitude, a dessert brings joy and satisfaction, creating memories that linger long after the last bite. It's these simple moments that add richness to our lives.          </p>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+      <figure class="img hover">
+        <div class="image"><img src="ds1.avif"   alt="pr-sample24" /></div>
+        <figcaption>
+          <div class="date"><span class="day">17</span><span class="month">Nov</span></div>
+          <h3>An Abstract Post Heading</h3>
+          <p>
+      
+            Desserts are more than just food; they are expressions of creativity and love. Each recipe tells a story, passed down through generations or discovered anew, bringing a piece of the creator's heart to the table.          </p>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+      <figure class="img">
+        <div class="image"><img src="ds2.avif" alt="pr-sample25" /></div>
+        <figcaption>
+          <div class="date"><span class="day">01</span><span class="month">Dec</span></div>
+          <h3>Down with this sort of thing</h3>
+          <p>
+      
+            I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway.
+          </p>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+      <figure class="img hover">
+        <div class="image"><img src="ds1.avif"  alt="pr-sample24" /></div>
+        <figcaption>
+          <div class="date"><span class="day">17</span><span class="month">Nov</span></div>
+          <h3>An Abstract Post Heading</h3>
+          <p>
+      
+            From the velvety smoothness of a cheesecake to the crisp, buttery layers of a croissant, each dessert offers a unique experience, a journey of flavors that captivates and delights.          </p>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+      <figure class="img">
+        <div class="image"><img src="bk8.jpeg" alt="pr-sample25" /></div>
+        <figcaption>
+          <div class="date"><span class="day">01</span><span class="month">Dec</span></div>
+          <h3>Down with this sort of thing</h3>
+          <p>
+      
+            Desserts have a magical way of bringing people together. Whether at a festive gathering or a casual get-together, the shared enjoyment of a sweet treat fosters connection and community.          </p>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+</body>
+</html>
